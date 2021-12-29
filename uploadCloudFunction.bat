@@ -1,0 +1,1 @@
+"D:\soft\微信web开发者工具\cli.bat" cloud functions deploy --e i494421184-5gou5g1n76a3e167 --n quickstartFunctions --r --project "D:\object2\项目：记事本\noteBook" --report_first --report
