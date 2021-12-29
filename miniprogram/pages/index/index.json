@@ -1,5 +1,7 @@
 {
+  "navigationStyle": "custom",
+  "navigationBarTextStyle": "white",
   "usingComponents": {
-    "cloud-tip-modal": "/components/cloudTipModal/index"
+    "mp-navigation-bar": "/miniprogram_npm/weui-miniprogram/navigation-bar/navigation-bar"
   }
 }

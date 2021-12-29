@@ -13,7 +13,21 @@ App({
         traceUser: true,
       });
     }
-
     this.globalData = {};
-  }
+
+    var app=this;
+    wx.getSystemInfo({
+      success: res => {
+        if (res.model.search('iPhone X') != -1) {
+          this.globalData.isIPX = true
+        }
+        this.globalData.navH = res.statusBarHeight + 44;
+      }, fail(err) {
+        this.globalData.navH=0
+      }
+    })
+  },
+  globalData: {
+    navH:0
+  },
 });

@@ -1,0 +1,53 @@
+
+<view class="my_page" >
+	<view class="grzx" >
+		<view class="toplist">
+        <image src="cloud://i494421184-5gou5g1n76a3e167.6934-i494421184-5gou5g1n76a3e167-1309026381/myAll/user_.jpg"></image>
+		</view>
+		<view class="userlist">
+			<view class="naem font_">请先登录</view>
+		</view>
+	</view>
+	<view class="mainbox">
+		<view class="newsList">
+			<view class="item" bindtap="openPage" data-url="../my_news/list/index">
+				<view class="after" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/my_img5.png')"></view>
+				<view class="des">我的消息 <view wx:if="{{newsList==true}}" style="margin-left: 5px;" class="newsListnums">{{newsListnums}}</view>
+				</view>
+				<view class="befor" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/shijia_img2.png')"></view>
+			</view>
+			<view class="item" bindtap="openPage" data-url="../my_all/my_zan/index">
+				<view class="after" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/my_zan.png')"></view>
+				<view class="des">我的赞</view>
+				<view class="befor" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/shijia_img2.png')"></view>
+			</view>
+			<view class="item" bindtap="openPage" data-url="../my_all/my_pl/index">
+				<view class="after" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/my_pl.png')"></view>
+				<view class="des">我的评论</view>
+				<view class="befor" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/shijia_img2.png')"></view>
+			</view>
+			<view class="item" bindtap="openPage" data-url="../my_inviet/index">
+				<view class="after" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/my_img8.png')"></view>
+				<view class="des">我的邀请</view>
+				<view class="befor" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/shijia_img2.png')"></view>
+			</view>
+			<view class="item" bindtap="openPage" data-url="../my_all/my_dizhi/index">
+				<view class="after" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/my_address.png')"></view>
+				<view class="des">地址管理</view>
+				<view class="befor" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/shijia_img2.png')"></view>
+			</view>
+			<view class="item" bindtap="showmsg">
+				<button class='contact-btn' style="width: 670rpx;display: block;" open-type='contact' wx:if="{{islogin}}"></button>
+				<view class="after" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/myjf_img.png')"></view>
+				<view class="des">在线客服</view>
+				<view class="befor" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/shijia_img2.png')"></view>
+			</view>
+			<view class="item" bindtap="openYS">
+				<view class="after" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/my_img_ys.png')"></view>
+				<view class="des">隐私条款</view>
+				<view class="befor" style="background-image:url('https://e-tron.auto-smart.com/public/appetron/images/shijia_img2.png')"></view>
+			</view>
+		</view>
+	</view>
+	<view wx:if='{{userId!=0}}' bindtap="outLogin" class="outLogin">退出登录</view>
+</view>
